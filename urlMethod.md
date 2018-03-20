@@ -1,5 +1,6 @@
 # BuidUrl
-public static URL buildUrl() {
+```
+   public static URL buildUrl() {
        Uri.Builder builder = new Uri.Builder();
         builder.scheme("https")
                .authority("developer.android.com")
@@ -9,7 +10,7 @@ public static URL buildUrl() {
                .appendQueryParameter(utm_source, udacity)
                .appendQueryParameter(utm_medium, course)
                .appendQueryParameter(utm_campaign, android_basics)
-               .fragment("phone")
+               .fragment("phone");
 
         URL url = null;
         try {
@@ -19,6 +20,6 @@ public static URL buildUrl() {
         }
         return url;
     }
-
+```
 
 
